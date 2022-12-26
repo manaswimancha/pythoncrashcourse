@@ -1,0 +1,3 @@
+Python is a scripting languagr.
+Python is more a higher level programming language than C.
+Python is a multi-paradigm programming language.
