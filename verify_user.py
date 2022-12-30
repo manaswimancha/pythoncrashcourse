@@ -19,15 +19,14 @@ def get_new_username():
 def greet_user():
     username = get_stored_username()
     if username:
-        invalid_response = True
-        while(invalid_response):
+        while(True):
             response = input(f"Are you {username}? (y/n) ")
             if response=="y":
                 print(f"Welcome back, {username}")
-                invalid_response = False
+                break
             elif response=="n":
                 get_new_username()
-                invalid_response = False
+                break
             else:
                 pass
     else:
