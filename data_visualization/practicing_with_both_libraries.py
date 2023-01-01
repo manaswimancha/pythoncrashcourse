@@ -1,15 +1,15 @@
-# # RandomWalk on Plotly
+# RandomWalk on Plotly
 
-# import plotly.express as px
-# from random_walk import RandomWalk
+import plotly.express as px
+from random_walk import RandomWalk
 
-# rw = RandomWalk(1000)
-# rw.fill_walk()
+rw = RandomWalk(1000)
+rw.fill_walk()
 
-# fig = px.scatter(x=rw.x_values,y=rw.y_values)
-# fig.update_xaxes(showgrid=False,zeroline=False,visible=False)
-# fig.update_yaxes(showgrid=False,zeroline=False,visible=False)
-# fig.show()
+fig = px.scatter(x=rw.x_values,y=rw.y_values)
+fig.update_xaxes(showgrid=False,zeroline=False,visible=False)
+fig.update_yaxes(showgrid=False,zeroline=False,visible=False)
+fig.show()
 
 # Die Roll on Matplotlib
 
