@@ -9,7 +9,6 @@ class GameCharacter:
         self.rect.center = self.screen_rect.center
         self.moving_right = False
         self.moving_left = False
-        # self.settings = ai_game.settings
 
     def blitme(self):
         self.screen.blit(self.image, self.rect)
