@@ -1,6 +1,7 @@
 import pygame
 from pygame.sprite import Sprite
 import sys
+from random import randint
  
 class Alien(Sprite):
     """A class to represent a single alien in the fleet."""
@@ -91,7 +92,7 @@ class AlienInvasion:
         """Create an alien and place it in the row."""
         alien = Alien(self)
         alien_width, alien_height = alien.rect.size
-        alien.x = alien_width + 2 * alien_width * alien_number
+        alien.x = alien_width + 2 * alien_width * alien_number + randint(-alien_width/2,alien_width/2)
         alien.rect.x = alien.x
         alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
         self.aliens.add(alien)
